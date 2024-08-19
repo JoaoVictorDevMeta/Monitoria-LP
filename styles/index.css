@@ -1,0 +1,130 @@
+:root{
+    --dark-bg-color: rgb(30, 41, 59);
+    --primary-color: #0D7C66;
+
+    /*fonts*/
+    --redhat: "Red Hat Display", sans-serif;
+}
+a{
+    transition: 0.2s;
+}
+
+.root{
+    width: 100%;
+    max-width: 2000px;
+    margin: 0px auto;
+}
+header{
+    height: 101px;
+    display: flex;
+    align-items: end;
+    margin: 0px 70px;
+    border-bottom: 3px solid #757575;
+}
+header > h2{
+    font-weight: 700;
+    font-size: 28px;
+    font-family: var(--redhat);
+}
+header > h2 > span{
+    font-weight: 400;
+}
+
+.presentation{
+    margin: 0px 70px;
+    margin-bottom: 100px;
+}
+.mon-title{
+    margin-top: 70px;
+    font-size: 80px;
+    font-family: var(--redhat);
+    text-transform: uppercase;
+    font-weight: 900;
+    max-width: 700px;
+}
+.presentation > p{
+    font-size: 24px;
+    font-family: var(--redhat);
+    max-width: 800px;
+}
+.presentation > p a{
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+.presentation> p a:hover{
+    opacity: 0.6;
+}
+.link-btn{
+    background-color: var(--primary-color);
+    padding: 20px 40px;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    display: block;
+    width: fit-content;
+}
+.link-btn:hover{
+    opacity: 0.7;
+}
+.presentation > .link-btn{
+    margin-top: 50px;
+}
+
+.mon-info{
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--primary-color);
+    padding: 0px 70px;
+}
+.meet-item{
+    border: 2px solid;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+/*.meet-item{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+}*/
+
+
+@media (max-width: 991.98px) {
+    .mon-title{
+        font-size: 50px;
+    }
+    .presentation > p{
+        font-size: 20px;
+    }
+    .link-btn{
+        font-size: 18px;
+        padding: 20px 30px;
+    }
+}
+@media (max-width: 767.98px){
+    header{
+        margin: 0px 30px;
+    }
+    .presentation{
+        margin: 0px 30px;
+        margin-bottom: 80px;
+    }
+    .presentation > p{
+        font-size: 18px;
+    }
+    .mon-title{
+        font-size: 32px;
+    }
+    .meet-item{
+        width: 150px;
+    }
+    .meet-item p{
+        font-size: 14px;
+    }
+    .link-btn{
+        font-size: 16px;
+        padding: 15px 25px;
+    }
+}
