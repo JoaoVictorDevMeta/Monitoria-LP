@@ -1,0 +1,97 @@
+.rep-container .info{
+    margin: 0 70px;
+}
+.info h2{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.search-input{
+    margin-bottom: 40px;
+}
+.search-input label{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--redhat);
+}
+.search-input input{
+    width: 100%;
+    border: none;
+    border: 2px solid gray;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.gitrep-list{   
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;*/
+    max-width: 1000px;
+    margin: 0px 40px;
+    padding: 30px;
+}
+
+.rep-item{
+    border: 1px solid #b6b7b8;
+    padding: 20px;
+    border-radius: 15px;
+    /*border-left: 10px solid var(--primary-color);*/
+    /*max-width: 500px;*/
+}
+.rep-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.rep-item h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b6b7b8;
+    max-width: 450px;
+}
+.rep-item p{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(54, 54, 54);
+}
+.rep-item a{
+    display: block;
+    margin-top: 20px;
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 7px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.pagination-controls button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pagination-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+    background-color: var(--hover-bg-color);
+}
+
+.pagination-controls #page-info {
+    font-family: var(--redhat);
+    font-size: 16px;
+}

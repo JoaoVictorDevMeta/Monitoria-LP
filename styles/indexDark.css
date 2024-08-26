@@ -1,0 +1,129 @@
+.dark{
+    background-color: #1a1a1a;
+    color: white;
+}
+.dark header{
+    border-bottom: 3px solid #2b2b2b;
+}
+.dark * {
+    color: #d3dce6;
+}
+.dark .presentation > p a{
+    color: #00FFF0;
+}
+.dark .presentation .link-btn{
+    border: 2px solid gray;
+    background: none;
+    color: white;
+}
+.dark .rep-info{
+    background: #232323;
+    border-top: 3px solid #2b2b2b;
+    border-bottom: 3px solid #2b2b2b;
+}
+.dark .rep-link a{
+    background: #1a1a1a;
+    border: 1px solid gainsboro;
+    color: #00FFF0;
+}
+.dark .rep-link a:hover{
+    background: #00FFF0;
+    color: #1a1a1a;
+}
+
+
+.dark .search-input input{
+    background-color: #1a1a1a;
+    border: 2px solid #2b2b2b;
+    color: white;
+}
+.dark .gitrep-list .rep-item{
+    background: #232323;
+}
+.dark .gitrep-list .rep-item p{
+    color: #d3dce6;
+}
+.dark .gitrep-list .rep-item a{
+    background: #1a1a1a;
+    border: 1px solid #00FFF0;
+    color: #00FFF0;
+}
+.dark .gitrep-list .rep-item a:hover{
+    background: #00FFF0;
+    color: #1a1a1a;
+}
+.dark .pagination-controls button{
+    border: 1px solid #d3dce6;
+    background: #1a1a1a;
+    color: #d3dce6;
+}
+.dark .pagination-controls button:disabled{
+    border: 1px solid #2b2b2b;
+    background: #232323;
+    color: #2b2b2b;
+}
+.dark .pagination-controls span{
+    color: #d3dce6;
+}
+
+/*DARK BUTTON*/
+.dark-toggle-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.dark-toggle-btn button {
+    position: relative;
+    background-color: var(--dark-bg-color);
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: none;
+    font-size: 24px;
+    font-family: var(--redhat);
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dark-toggle-btn button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: var(--hover-bg-color);
+    border-radius: 50%;
+    transition: width 0.4s ease, height 0.4s ease, top 0.4s ease, left 0.4s ease;
+    z-index: -1;
+}
+
+.dark-toggle-btn button:hover::before {
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+}
+
+.dark-toggle-btn button:hover {
+    color: var(--hover-text-color);
+}
+
+.dark-toggle-btn svg {
+    height: 24px;
+    width: 24px;
+    margin-bottom: 4px;
+}
+
+.dark .dark-toggle-btn button{
+    background-color: white;
+}
+.dark .dark-toggle-btn button svg path{
+    color: #1a1a1a;
+}
+.dark .dark-toggle-btn button:hover svg path {
+    color: #ffffff;
+}

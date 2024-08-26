@@ -1,6 +1,8 @@
 :root{
-    --dark-bg-color: rgb(30, 41, 59);
     --primary-color: #0D7C66;
+    --dark-bg-color: #1a1a1a;
+    --hover-bg-color: #555;
+    --hover-text-color: #fff;
 
     /*fonts*/
     --redhat: "Red Hat Display", sans-serif;
@@ -21,13 +23,25 @@ header{
     margin: 0px 70px;
     border-bottom: 3px solid #757575;
 }
-header > h2{
+header > a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--redhat);
+    font-weight: 700;
+}
+header > a:hover{
+    opacity: 0.6;
+}
+header  h2{
     font-weight: 700;
     font-size: 28px;
     font-family: var(--redhat);
 }
-header > h2 > span{
+header  h2 > span{
     font-weight: 400;
+}
+main{
+    position: relative;
 }
 
 .presentation{
@@ -72,11 +86,14 @@ header > h2 > span{
     margin-top: 50px;
 }
 
-.mon-info{
+.rep-info{
     width: 100%;
     min-height: 100px;
     background-color: var(--primary-color);
     padding: 0px 70px;
+    color: white;
+    display: flex;
+    justify-content: center;
 }
 .meet-item{
     border: 2px solid;
@@ -84,12 +101,108 @@ header > h2 > span{
     width: 200px;
     border-radius: 5px;
 }
+.rep-text{
+    width: 260px;
+}
+.rep-text p{
+    font-size: 18px;
+}
+.rep-text h2{
+    font-weight: 900;
+    font-family: var(--redhat);
+}
+.rep-box{
+    min-width: 400px;
+    max-width: calc(100% - 400px);
+    gap: 20px;
+    justify-content: space-evenly;
+}
+.rep-box .item{
+    width: 360px;
+    border: 3px solid;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000021;
+    /*height: fit-content;
+    padding-bottom: 30px;*/
+}
+.rep-box .item a{
+    background: white;
+    color: #383838;
+    padding: 5px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    width: fit-content;
+    margin-top: 30px;
+    transition: 0.2s;
+}
+.rep-box .item a:hover{
+    background-color: rgba(255, 255, 255, 0.623);
+}
+.rep-link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.rep-link a{
+    background: white;
+    padding: 7px 50px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-family: var(--redhat);
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.self-present{
+    margin: 0px auto;
+    max-width: 1200px;
+    display: flex;
+}
+.self-present .info{
+    width: 60%;
+}
+.self-present .info h2{
+    font-size: 40px;
+    font-family: var(--redhat);
+    font-weight: 900;
+}
+.self-present .info h4{
+    font-size: 22px;
+    font-family: var(--redhat);
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 20px;
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
+}
+.self-present .info p{
+    font-size: 18px;
+    text-align: justify;
+    font-family: var(--redhat);
+    margin-top: 20px;
+}
+.image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.self-present .image img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 /*.meet-item{
     background-color: var(--primary-color);
     color: white;
     border-radius: 10px;
 }*/
-
 
 @media (max-width: 991.98px) {
     .mon-title{
@@ -101,6 +214,16 @@ header > h2 > span{
     .link-btn{
         font-size: 18px;
         padding: 20px 30px;
+    }
+    .self-present{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .self-present .info{
+        width: 100%;
+    }
+    .self-present .image{
+        width: 100%;
     }
 }
 @media (max-width: 767.98px){
@@ -126,5 +249,27 @@ header > h2 > span{
     .link-btn{
         font-size: 16px;
         padding: 15px 25px;
+    }
+    .rep-info{
+        padding: 0px 30px;
+        padding-bottom: 40px;
+        flex-direction: column;
+    }
+    .rep-box {
+        padding: 0px !important;
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        padding-bottom: 50px !important;
+    }
+    .rep-box .item{
+        width: 100%;
+        min-width: 0;
+    }
+    .rep-text{
+        width: 100%;
+    }
+    .rep-text p{
+        font-size: 16px;
     }
 }
