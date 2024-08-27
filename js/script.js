@@ -13,7 +13,7 @@
 
 async function loadRepItems() {
     try {
-        const repItemsJson = await fetch('/js/data.json');
+        const repItemsJson = await fetch('https://joaovictordevmeta.github.io/Monitoria-LP/data/data.json');
         const repitems = await repItemsJson.json();
         const repBox = document.getElementById('rep-box');
 
