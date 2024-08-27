@@ -150,3 +150,9 @@
 .dark .dark-toggle-btn button:hover svg path {
     color: #ffffff;
 }
+.dark #loading-screen{
+    background-color: #1a1a1a;
+}
+.dark .loading-message span {
+    color: #00FFF0;
+}

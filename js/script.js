@@ -1,4 +1,6 @@
-/*window.addEventListener('load', function() {
+import { reps as repitems } from '../data/data.js';
+
+window.addEventListener('load', function() {
     const loadingScreen = document.getElementById('loading-screen');
     document.body.classList.add('no-scroll');
     setTimeout(function() {
@@ -9,12 +11,10 @@
         }, 1500); 
     }, 1500);
 });
-*/
+
 
 async function loadRepItems() {
     try {
-        const repItemsJson = await fetch('https://joaovictordevmeta.github.io/Monitoria-LP/data/data.json');
-        const repitems = await repItemsJson.json();
         const repBox = document.getElementById('rep-box');
 
         const sortedItems = repitems.sort((a, b) => b.id - a.id).slice(0, 4);

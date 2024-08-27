@@ -1,7 +1,4 @@
-const fetchData = async () => {
-  const repItemsJson = await fetch("https://joaovictordevmeta.github.io/Monitoria-LP/data/data.json");
-  return await repItemsJson.json();
-};
+import { reps } from "../data/data.js";
 
 const filterList = (data, searchTerm) => {
   return data.filter(
@@ -87,7 +84,7 @@ const setupPagination = (jsonData, repList, searchInput, itemsPerPage) => {
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const jsonData = await fetchData();
+  const jsonData = reps;
 
   const repList = document.getElementById("rep-list");
   const searchInput = document.getElementById("search");
