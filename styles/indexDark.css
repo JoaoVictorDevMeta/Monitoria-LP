@@ -30,6 +30,14 @@
     background: #00FFF0;
     color: #1a1a1a;
 }
+.dark .rep-box .item a{
+    color: #d3dce6;
+    background: #1a1a1a;
+    border: 2px solid;
+}
+.dark .contact-cell a{
+    color: #00FFF0;
+}
 
 
 .dark .search-input input{
@@ -64,6 +72,21 @@
 }
 .dark .pagination-controls span{
     color: #d3dce6;
+}
+.dark .contact{
+    background: #1a1a1a;
+    border: 2px solid;
+    border-radius: 15px;
+}
+.dark .row-bottom{
+    background: #232323;
+    border-top: 2px solid;
+}
+.dark .rep-item h3{
+    font-size: 22px;
+}
+.dark .rep-item p{
+    font-size: 16px;
 }
 
 /*DARK BUTTON*/

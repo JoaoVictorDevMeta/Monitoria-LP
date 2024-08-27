@@ -95,3 +95,13 @@
     font-family: var(--redhat);
     font-size: 16px;
 }
+
+@media (max-width: 767.98px){
+    .gitrep-list{
+        margin: 0px;
+        padding-bottom: 60px;
+    }
+    .rep-container .info{
+        margin: 0px 30px;
+    }
+}
