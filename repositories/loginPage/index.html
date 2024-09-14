@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!--
+        LINKS ÚTEIS PARA PRODUÇÃO
+        https://icons.getbootstrap.com/icons/envelope/
+        https://fonts.google.com/
+        https://colorhunt.co/
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Red Hat Display", system-ui;
+    background-color: #f5f5f5;
+}
+section{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+}
+.image{
+    flex: 0.5;
+    max-width: 300px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.login-container{
+    flex: 1;
+    padding: 35px;
+    max-width: 500px;
+}
+h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: #6439FF;
+    margin-bottom: 1rem;
+}
+h2 > span{
+    color: #000000;
+}
+p{
+    width: 300px;
+    font-weight: bold;
+    color: #575757;
+    font-size: 18px;
+    margin-bottom: 70px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+button{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #6439FF;
+    border: none;
+    width: 130px;
+    height: 55px;
+    font-family:  "Red Hat Display", system-ui;
+    box-shadow: 0px 0px 10px #7272724d;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover{
+    background-color: #4f2ff2;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+input{
+    border: none;
+    border-bottom: 2px solid #a1a1a1;
+    font-size: 16px;
+    flex: 1;
+    padding: 10px 10px 10px;
+}
+input::placeholder{
+    font-size: 18px;
+    color: rgb(36, 36, 36);
+    font-weight: bold;
+    font-family:  "Red Hat Display", system-ui;
+}
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #4f2ff2;
+}
+svg{
+    width: 25px;
+    height: 25px;
+    color: gray;
+    margin-right: 10px;
+}
+.op-links{
+    margin: 40px 0px 30px;
+    text-align: end;
+}
+a{
+    color: #6439FF;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+</style>
+<body>
+    <section>
+        <div class="image">
+            <img src="./loginBG.png" alt="login-background">
+        </div>
+        <div class="login-container">
+            <h2>Nós somos <span>NUVA</span></h2>
+            <p>
+                Bem-vindo devolta! Faça login na sua conta para ver seus clientes de hoje.
+            </p>
+            <form action="" method="POST">
+                <div class="input-container">
+                    <label for="email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                        </svg>
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="input-container">
+                    <label for="password">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1"/>
+                        </svg>
+                    </label>
+                    <input type="password" name="password" id="password" placeholder="Senha">
+                </div>
+                <button type="submit">Logar</button>
+            </form>
+            <div class="op-links">
+                <a href="#">Registrar-se</a>
+                <a href="#">Esqueci a senha</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
