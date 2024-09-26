@@ -21,7 +21,10 @@ const renderList = (data, container, page, itemsPerPage) => {
       <div class="rep-item">
         <h3>${item.title}</h3>
         <p>${item.description}</p>
+        <div style="display:flex; gap: 10px; flex-wrap: wrap;">
         <a href="${item.link}">Acessar conteúdo</a>
+        ${item.page ? `<a href="${item.page}" class="optional-link">Ver página</a>` : ''}
+        </div>
       </div>
     `
     )

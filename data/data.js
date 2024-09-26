@@ -12,5 +12,13 @@ export const reps = [
     description:
       "Este projeto foi realizado com o intuito de facilitar a comunicação entre os monitores e os alunos. O site foi desenvolvido com HTML, CSS e JavaScript.",
     link: "https://github.com/JoaoVictorDevMeta/Monitoria-LP"
-  }
+  },
+  {
+    id: 3,
+    title: "Página de Login",
+    description:
+      "Página de login desenvolvida com HTML e CSS. Utilizei o conceito de Flexbox para alinhar os elementos na tela e alguns truques com CSS.",
+    link: "https://github.com/JoaoVictorDevMeta/Monitoria-LP/tree/main/repositories/loginPage",
+    page: "../repositories/loginPage/index.html"
+  },
 ];
